@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f7f7f2" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; upgrade-insecure-requests" />
-    <meta name="description" content="How SiboMate handles on-device health information, optional AI requests, purchases, diagnostics, support, and your choices." />
+    <meta name="description" content="SiboMate privacy policy, terms of use, and support information." />
     <link rel="canonical" href="https://sibomate.me/privacy.html" />
     <meta property="og:title" content="Privacy &amp; Support · SiboMate" />
     <meta property="og:description" content="How SiboMate handles your information, purchases, and support requests." />
@@ -28,7 +28,7 @@
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="SiboMate home"><img class="brand-mark" src="icon-ui.webp" alt="" width="32" height="32" /><span class="brand-name">SiboMate</span></a>
+        <a class="brand" href="index.html" aria-label="SiboMate home"><img class="brand-mark" src="icon-ui.webp" alt="" width="32" height="32" /><span class="brand-name">SiboMate</span></a>
         <a class="button button-small button-dark" href="https://apps.apple.com/us/app/sibomate/id6792794417" target="_blank" rel="noreferrer">Get the app <span>↗</span></a>
       </header>
 
@@ -36,68 +36,60 @@
         <section class="legal-hero section-pad">
           <div class="eyebrow"><span class="eyebrow-dot"></span> Privacy &amp; Support</div>
           <h1>Private by <em>default.</em></h1>
-          <p>Your assessment answers, symptom and food logs, and profile are stored on your device. Limited purchase, network, diagnostic, and support information may be handled by the providers described below.</p>
-          <small>Last updated: September 6, 2026</small>
+          <p>SiboMate uses a local-first core for your health history. Optional AI and backup destinations are clearly separated, consent-led, and described before use.</p>
+          <small>Last updated: September 9, 2026</small>
         </section>
 
         <article class="legal-content section-pad">
-          <p class="legal-lede">The short version: the health-adjacent information you enter, such as symptoms, meals, assessment answers, and profile details, is stored locally on your device and is not sent to a SiboMate account or application server. Some supporting services handle limited information so purchases, optional AI, downloads, crash diagnostics, and support can work.</p>
+          <p class="legal-lede">The short version: your core health history is stored locally using authenticated encryption. Optional AI requests go directly to the provider and destination you choose after consent. Optional backups are encrypted. SiboMate does not route cloud AI requests through its own server.</p>
 
           <h2>What information the app handles</h2>
-          <h3>Stored on your device only</h3>
+          <h3>Stored locally by default</h3>
           <ul>
             <li>Your assessment answers and results, including breath-test values and symptom checks.</li>
             <li>Your symptom and food logs from the Tracker.</li>
             <li>Your profile details and app preferences.</li>
             <li>Any AI provider API key you enter, which is kept in the secure device keychain.</li>
           </ul>
-          <p>This information is encrypted at rest in the app’s local storage. API keys are stored in the iOS Keychain. We do not operate an account system or application server that receives these records.</p>
+          <p>This information is saved using authenticated local storage and the secure device keychain where appropriate. The local-first core is designed to keep health history on your device. Optional services are described separately below.</p>
 
           <h2>The research database</h2>
-          <p>The app can search a database of publicly posted, community-reported experiences from health communities. The database is downloaded from a content-hosting provider and searched locally after download. The provider may receive standard network information, such as your IP address, device or browser information, and request time, when the file is downloaded. Local database searches do not send your search terms to us.</p>
+          <p>The app can search a database of publicly posted, community-reported experiences from health communities alongside cited research summaries. After the database is downloaded, local search can run on your device. The app may still connect to retrieve updates or use optional services.</p>
 
           <h2>What we do not do</h2>
-          <ul><li>We do not require or create a SiboMate account.</li><li>We do not include third-party advertising or use your health logs for cross-app advertising.</li><li>We do not sell your personal information.</li><li>We do not receive your symptom, meal, assessment, or profile records on a SiboMate server.</li></ul>
+          <ul><li>We do not require or create a SiboMate account.</li><li>We do not use third-party advertising or tracking SDKs.</li><li>We do not sell your personal information.</li></ul>
 
           <h2>AI features and your health information</h2>
           <p>The AI feature is optional and turned off until you enable it. Before you can use it, the app shows a consent screen explaining what will be shared, and you must agree.</p>
-          <p>When you ask the AI a question, the app sends your question and relevant context, which may include assessment results, logs, and matching research excerpts, directly to the AI provider you choose. The request uses the API key you entered and does not pass through a SiboMate application server. The provider’s own privacy policy, retention practices, and terms apply. You can disconnect the AI and remove your key at any time.</p>
+          <p>When you ask the AI a question, the app sends your question and the context you selected, which may include assessment results, logs, and matching research excerpts, to the destination shown in the app. Apple on-device processing is available on supported iPhones. Cloud requests go directly to the provider you choose, using the API key you entered, and do not pass through our servers. The provider’s own privacy policy and terms apply. You can disconnect the AI and remove your key at any time.</p>
           <p><strong>AI answers are not medical advice.</strong> They can be incomplete or wrong. Always consult a qualified healthcare professional before making health decisions.</p>
 
           <h2>Purchases</h2>
           <p>SiboMate offers auto-renewing subscriptions and a one-time lifetime purchase. Purchases are processed by Apple and managed on our behalf by RevenueCat.</p>
-          <p>RevenueCat processes purchase records, receipt information, an app-specific identifier, and standard technical information so purchases work across reinstalls. SiboMate does not intentionally send your name, email address, symptom logs, food logs, assessment answers, or profile details to RevenueCat. Read <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat’s privacy policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s privacy policy</a>.</p>
-
-          <h2>Crash diagnostics</h2>
-          <p>If crash reporting is enabled in a released version, Sentry may process limited technical information, such as app version, device model, operating-system version, timestamps, and error details, to help us diagnose failures. SiboMate is configured not to attach symptom logs, food logs, assessment answers, AI prompts, or user-entered profile details to crash reports. Read <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry’s privacy policy</a>.</p>
-
-          <h2>Support messages</h2>
-          <p>If you email support, your email provider and Google may process your address, message, attachments, and related delivery information. We use that information to respond and troubleshoot. Please avoid including health information you do not want to send by email. Read <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy</a>.</p>
+          <p>RevenueCat processes purchase records, receipt information, and an anonymous identifier so purchases work across reinstalls. It does not receive your name, email, or the health information you enter. Read <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat’s privacy policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s privacy policy</a>.</p>
 
           <h2>Children</h2>
-          <p>SiboMate is not directed to children under 13. Users should meet the App Store age rating shown in their region. If you believe a child has sent information through support, contact us so we can review and delete it where appropriate.</p>
+          <p>SiboMate is intended for adults and is not directed to children under 13. We do not knowingly collect information from children.</p>
 
-          <h2>Retention, deletion, and your choices</h2>
-          <p>On-device app data remains until you delete it in the app or uninstall the app. Removing the app does not automatically delete records independently retained by Apple, RevenueCat, an AI provider, Sentry, a download host, or an email provider under their own policies. Support messages are kept only as reasonably needed to respond, maintain support history, meet legal obligations, and resolve disputes. You can ask us to delete support correspondence by emailing the address below, subject to records we must retain.</p>
-          <p>You can avoid AI-provider processing by leaving AI disconnected, remove your API key in the app, and avoid sending sensitive information in support email. If this policy changes, we will update the date above.</p>
+          <h2>Changes and your rights</h2>
+          <p>You can delete local data at any time by using the app’s controls, clearing the app’s data, or uninstalling the app. If encrypted backups are enabled, delete those separately through the backup controls. If this policy changes, we will update the date above.</p>
 
           <hr />
           <h2>Support</h2>
           <p>Need help, found a bug, or have a privacy question? Email <a href="mailto:sibomate@gmail.com">sibomate@gmail.com</a>. We aim to respond within 2–3 business days.</p>
           <h3>Purchases and subscriptions</h3>
-          <p>To restore a purchase, open the purchase screen and choose “Restore Purchases.” To cancel a subscription, open iPhone Settings, tap your name, then Subscriptions. Lifetime is a one-time purchase and does not renew. Prices, taxes, currencies, and trial eligibility can vary by region and are confirmed by Apple before purchase. Refund requests are handled under Apple’s policies.</p>
+          <p>To restore a purchase, open the purchase screen and choose “Restore Purchases.” To cancel a subscription, open iPhone Settings, tap your name, then Subscriptions. Lifetime is a one-time purchase and does not renew.</p>
 
           <hr />
           <h2>Terms of Use</h2>
-          <p>SiboMate is provided for educational and informational purposes only. It does not provide medical advice, diagnosis, or treatment and is not a substitute for professional medical care. Community reports are anecdotal rather than proof that an approach is safe or effective. Research summaries, database material, and AI responses may be incomplete, outdated, or wrong.</p>
-          <p>Always seek the advice of a qualified healthcare provider. Never begin, stop, or change treatment based solely on this app. If you think you may have a medical emergency, contact emergency services. By using SiboMate, you acknowledge that you use it at your own discretion and risk.</p>
-          <p>Subscriptions renew through Apple unless canceled before renewal. Apple controls billing, refunds, regional prices, and trial eligibility. Third-party services and links are governed by their own terms. Purchases and use are also subject to the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>.</p>
+          <p>SiboMate is provided for educational and informational purposes only. It does not provide medical advice, diagnosis, or treatment and is not a substitute for professional medical care. Content may be incomplete or become outdated.</p>
+          <p>Always seek the advice of a qualified healthcare provider. Never begin, stop, or change treatment based solely on this app. By using SiboMate, you acknowledge that you use it at your own discretion and risk. Purchases are subject to the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard EULA</a>.</p>
         </article>
       </main>
 
       <footer class="site-footer section-pad">
-        <div class="footer-main"><a class="brand" href="/"><img class="brand-mark" src="icon-ui.webp" alt="" width="32" height="32" /><span class="brand-name">SiboMate</span></a><p>A private SIBO and gut-health companion.</p></div>
-        <div class="footer-links"><a href="/">Home</a><a href="sibo-symptom-tracker.html">SIBO Symptom Tracker</a><a href="privacy.html">Privacy &amp; Support</a><a href="https://apps.apple.com/us/app/sibomate/id6792794417" target="_blank" rel="noreferrer">App Store <span>↗</span></a></div>
+        <div class="footer-main"><a class="brand" href="index.html"><img class="brand-mark" src="icon-ui.webp" alt="" width="32" height="32" /><span class="brand-name">SiboMate</span></a><p>A private SIBO and gut-health companion.</p></div>
+        <div class="footer-links"><a href="index.html">Home</a><a href="privacy.html">Privacy &amp; Support</a><a href="https://apps.apple.com/us/app/sibomate/id6792794417" target="_blank" rel="noreferrer">App Store <span>↗</span></a></div>
         <div class="footer-bottom"><span>© 2026 SiboMate</span><span>For education, not diagnosis or treatment.</span></div>
       </footer>
     </div>
